@@ -1,0 +1,1947 @@
+
+/* =========================
+GENERAL
+========================= */
+
+•	{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, sans-serif;
+background: #f7f7f5;
+color: #222;
+line-height: 1.7;
+
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+img {
+width: 100%;
+display: block;
+}
+
+
+
+/* =========================
+HEADER
+========================= */
+
+header {
+width: 100%;
+padding: 18px 3%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 12px;
+box-sizing: border-box;
+
+
+background-color: #173e32;
+position: sticky;
+top: 0;
+z-index: 1000;
+
+box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+flex-shrink: 0;    
+font-size: 32px;
+font-weight: bold;
+letter-spacing: 0.5px;
+color: #e3c47a;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 14px;
+}
+
+header nav a {
+    white-space: nowrap;
+    font-size: 13px;
+    color: #f5f0e5;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+
+
+/* =========================
+HERO SECTION
+========================= */
+
+.hero {
+min-height: 88vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 80px 7%;
+position: relative;
+
+background:
+linear-gradient(
+rgba(8, 28, 22, 0.62),
+rgba(8, 28, 22, 0.72)
+),
+url("images/afghanistan-hero.jpg");
+
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+color: #fff;
+}
+
+.hero-content {
+max-width: 850px;
+position: relative;
+z-index: 1;
+}
+
+.hero-content .subtitle {
+color: #e3c47a;
+font-size: 14px;
+font-weight: 600;
+letter-spacing: 4px;
+margin-bottom: 22px;
+
+}
+
+.hero-content h1 {
+font-size: clamp(42px, 7vw, 88px);
+line-height: 1.12;
+font-weight: 700;
+margin-bottom: 25px;
+color: #fff;
+}
+
+.hero-content > p:not(.subtitle) {
+max-width: 650px;
+margin: 0 auto 35px;
+font-size: clamp(15px, 2vw, 18px);
+line-height: 1.9;
+letter-spacing: 0.3px;
+color: #f1eee5;
+}
+
+.hero-button {
+
+display: inline-block;
+padding: 15px 34px;
+background: #d4b064;
+color: #173e32;
+text-decoration: none;
+font-size: 15px;
+font-weight: 700;
+border: 1px solid #d4b064;
+border-radius: 4px;
+transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+background: transparent;
+color: #f0d18a;
+border-color: #f0d18a;
+transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+
+.hero {
+min-height: 78vh;
+padding: 65px 6%;
+}
+
+.hero-content .subtitle {
+font-size: 11px;
+letter-spacing: 3px;
+}
+
+.hero-content h1 {
+font-size: clamp(38px, 10vw, 54px);
+}
+
+.hero-content > p:not(.subtitle) {
+font-size: 15px;
+}
+
+.hero-button {
+padding: 13px 28px;
+
+}
+}
+
+
+
+/* =========================
+BUTTON
+========================= */
+
+.btn {
+display: inline-block;
+margin-top: 30px;
+padding: 13px 30px;
+background: #b08d57;
+color: white;
+border-radius: 30px;
+transition: 0.3s;
+}
+
+.btn:hover {
+transform: translateY(-3px);
+background: #947342;
+}
+
+
+/* =========================
+PAGE HERO
+========================= */
+
+.page-hero {
+min-height: 55vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 60px 7%;
+
+background:
+linear-gradient(
+rgba(0, 0, 0, 0.48),
+rgba(0, 0, 0, 0.48)
+),
+url("images/afghanistan-hero.jpg");
+
+background-size: cover;
+background-position: center;
+
+color: white;
+}
+
+
+.page-hero-content {
+max-width: 800px;
+}
+
+.page-hero-content p {
+font-size: 13px;
+letter-spacing: 4px;
+margin-bottom: 15px;
+}
+
+.page-hero-content h1 {
+font-size: clamp(40px, 6vw, 70px);
+margin-bottom: 20px;
+}
+
+.page-hero-content span {
+font-size: 17px;
+}
+
+
+/* =========================
+SECTION TITLE
+========================= */
+
+.section-title {
+text-align: center;
+max-width: 750px;
+margin: auto;
+}
+
+.section-title p {
+color: #b08d57;
+font-size: 13px;
+letter-spacing: 3px;
+margin-bottom: 10px;
+}
+
+.section-title h2 {
+font-size: clamp(30px, 4vw, 45px);
+
+margin-bottom: 15px;
+}
+
+.section-title span {
+color: #666;
+}
+
+
+/* =========================
+INTRO
+========================= */
+
+.intro,
+.provinces-section,
+.history-intro,
+.nature-intro,
+.food-intro,
+.culture-intro,
+.facts-intro {
+padding: 100px 7%;
+
+}
+
+
+/* =========================
+GRIDS
+========================= */
+
+.province-grid,
+.history-grid,
+.history-place-grid,
+.nature-grid,
+.food-grid,
+.culture-grid,
+.facts-grid {
+max-width: 1200px;
+margin: 50px auto 0;
+
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 30px;
+
+}
+
+
+/* =========================
+CARDS
+========================= */
+
+.province-card,
+.history-card,
+.history-place-card,
+.nature-card,
+.food-card,
+.culture-card,
+.fact-card {
+background: white;
+border-radius: 18px;
+overflow: hidden;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+transition: 0.4s;
+}
+
+
+.province-card:hover,
+.history-card:hover,
+.history-place-card:hover,
+.nature-card:hover,
+.food-card:hover,
+.culture-card:hover,
+.fact-card:hover {
+transform: translateY(-8px);
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+CARD IMAGES
+========================= */
+
+.province-card img,
+.history-place-card img,
+.nature-card img,
+
+.food-card img,
+.culture-card img {
+height: 280px;
+object-fit: cover;
+transition: 0.5s;
+}
+
+.province-card:hover img,
+.history-place-card:hover img,
+.nature-card:hover img,
+.food-card:hover img,
+.culture-card:hover img {
+transform: scale(1.05);
+}
+
+
+/* =========================
+CARD CONTENT
+========================= */
+
+.card-content {
+padding: 28px;
+}
+
+.card-content h3 {
+font-size: 25px;
+margin-bottom: 10px;
+}
+
+.card-content p {
+color: #666;
+margin-bottom: 18px;
+}
+
+.card-content a {
+color: #b08d57;
+font-weight: bold;
+}
+
+/* =========================
+HISTORY CARDS
+========================= */
+
+.history-card {
+padding: 35px;
+}
+
+.history-number,
+.nature-number,
+.food-number,
+.culture-number,
+.fact-number {
+color: #b08d57;
+font-size: 14px;
+letter-spacing: 2px;
+}
+
+.history-card h3 {
+margin-top: 12px;
+
+font-size: 25px;
+}
+
+.history-card p {
+margin-top: 10px;
+color: #666;
+}
+
+
+/* =========================
+HISTORY PLACES
+========================= */
+
+.history-places {
+padding: 100px 7%;
+}
+
+.history-place-card {
+padding-bottom: 25px;
+}
+
+
+.history-place-card h3,
+.history-place-card p {
+margin-left: 25px;
+margin-right: 25px;
+}
+
+.history-place-card h3 {
+margin-top: 20px;
+font-size: 23px;
+}
+
+.history-place-card p {
+color: #666;
+}
+
+
+/* =========================
+FEATURE SECTIONS
+========================= */
+
+
+.featured-nature,
+.food-feature,
+.culture-feature,
+.fact-generator {
+min-height: 55vh;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+text-align: center;
+
+padding: 80px 7%;
+
+background:
+linear-gradient(
+rgba(0, 0, 0, 0.52),
+rgba(0, 0, 0, 0.52)
+),
+
+url("images/afghanistan-hero.jpg");
+
+background-size: cover;
+background-position: center;
+
+color: white;
+}
+
+.featured-content,
+.food-feature-content,
+.culture-feature-content,
+.fact-generator-content {
+max-width: 750px;
+}
+
+.featured-content p,
+.food-feature-content p,
+.culture-feature-content p,
+.fact-generator-content p {
+letter-spacing: 3px;
+
+font-size: 13px;
+margin-bottom: 15px;
+}
+
+.featured-content h2,
+.food-feature-content h2,
+.culture-feature-content h2,
+.fact-generator-content h2 {
+font-size: clamp(30px, 5vw, 55px);
+margin-bottom: 20px;
+}
+
+
+/* =========================
+FACTS
+========================= */
+
+.fact-card {
+padding: 35px;
+}
+
+
+.fact-card h3 {
+font-size: 24px;
+margin: 12px 0;
+}
+
+.fact-card p {
+color: #666;
+}
+
+#fact {
+display: block;
+margin: 25px auto;
+font-size: 20px;
+max-width: 650px;
+}
+
+#factButton {
+border: none;
+cursor: pointer;
+
+padding: 14px 30px;
+border-radius: 30px;
+background: #b08d57;
+color: white;
+font-size: 15px;
+transition: 0.3s;
+}
+
+#factButton:hover {
+transform: translateY(-3px);
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+background: #171717;
+color: #aaa;
+
+text-align: center;
+padding: 30px 7%;
+font-size: 14px;
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 850px) {
+
+header {
+flex-direction: column;
+gap: 15px;
+}
+
+nav {
+flex-wrap: wrap;
+justify-content: center;
+
+gap: 15px;
+}
+
+.province-grid,
+.history-grid,
+.history-place-grid,
+.nature-grid,
+.food-grid,
+.culture-grid,
+.facts-grid {
+grid-template-columns: 1fr;
+}
+
+.hero {
+min-height: 75vh;
+}
+
+.hero-content h1 {
+font-size: 50px;
+}
+
+
+}
+
+@media (max-width: 500px) {
+
+header {
+padding: 18px 5%;
+}
+
+nav {
+gap: 10px;
+}
+
+nav a {
+font-size: 13px;
+}
+
+.intro,
+.provinces-section,
+.history-intro,
+
+.nature-intro,
+.food-intro,
+.culture-intro,
+.facts-intro,
+.history-places {
+padding: 70px 5%;
+}
+
+}
+
+/* =========================
+PREMIUM DESIGN
+========================= */
+
+:root {
+--dark: #101412;
+--dark-light: #18201c;
+--gold: #c6a15b;
+--gold-light: #e0c27a;
+--cream: #f4f0e7;
+--text-light: #d8d8d3;
+}
+
+
+/* =========================
+PREMIUM HEADER
+========================= */
+
+header {
+background: rgba(16, 20, 18, 0.92);
+
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+border-bottom: 1px solid rgba(198, 161, 91, 0.18);
+}
+
+.logo {
+color: var(--gold-light);
+letter-spacing: 2px;
+}
+
+nav a {
+color: #eeeeea;
+}
+
+nav a:hover {
+color: var(--gold-light);
+}
+
+nav a::after {
+background: var(--gold-light);
+
+}
+
+
+/* =========================
+PREMIUM HERO
+========================= */
+
+.hero,
+.page-hero {
+position: relative;
+overflow: hidden;
+}
+
+.hero::before,
+.page-hero::before {
+content: "";
+position: absolute;
+width: 500px;
+height: 500px;
+border: 1px solid rgba(224, 194, 122, 0.18);
+
+border-radius: 50%;
+right: -180px;
+top: -180px;
+}
+
+.hero::after,
+.page-hero::after {
+content: "";
+position: absolute;
+width: 300px;
+height: 300px;
+border: 1px solid rgba(224, 194, 122, 0.12);
+border-radius: 50%;
+left: -120px;
+bottom: -120px;
+}
+
+.hero-content,
+.page-hero-content {
+position: relative;
+
+z-index: 2;
+}
+
+.hero-content p,
+.page-hero-content p {
+color: var(--gold-light);
+font-weight: bold;
+}
+
+.hero-content h1,
+.page-hero-content h1 {
+text-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================
+PREMIUM BUTTON
+========================= */
+
+.btn,
+
+#factButton {
+background: linear-gradient(
+135deg,
+var(--gold-light),
+var(--gold)
+);
+
+color: #17130c;
+font-weight: bold;
+
+box-shadow:
+0 8px 25px rgba(198, 161, 91, 0.25);
+
+transition: all 0.35s ease;
+}
+
+.btn:hover,
+#factButton:hover {
+transform: translateY(-5px);
+box-shadow:
+
+0 14px 35px rgba(198, 161, 91, 0.35);
+}
+
+
+/* =========================
+PREMIUM CARDS
+========================= */
+
+.province-card,
+.history-card,
+.history-place-card,
+.nature-card,
+.food-card,
+.culture-card,
+.fact-card {
+
+border: 1px solid rgba(198, 161, 91, 0.12);
+
+transition:
+transform 0.45s ease,
+
+box-shadow 0.45s ease,
+border-color 0.45s ease;
+}
+
+.province-card:hover,
+.history-card:hover,
+.history-place-card:hover,
+.nature-card:hover,
+.food-card:hover,
+.culture-card:hover,
+.fact-card:hover {
+
+transform: translateY(-12px);
+
+border-color:
+rgba(198, 161, 91, 0.45);
+
+box-shadow:
+0 25px 55px rgba(0, 0, 0, 0.16);
+}
+
+
+
+/* =========================
+IMAGE EFFECT
+========================= */
+
+.province-card img,
+.history-place-card img,
+.nature-card img,
+.food-card img,
+.culture-card img {
+
+transition:
+transform 0.7s ease,
+filter 0.7s ease;
+}
+
+.province-card:hover img,
+.history-place-card:hover img,
+.nature-card:hover img,
+
+.food-card:hover img,
+.culture-card:hover img {
+
+transform: scale(1.08);
+
+filter: brightness(0.82);
+}
+
+
+/* =========================
+GOLD DETAILS
+========================= */
+
+.section-title p,
+.history-number,
+.nature-number,
+.food-number,
+.culture-number,
+.fact-number {
+
+color: var(--gold);
+}
+
+.card-content a {
+color: var(--gold);
+transition: 0.3s;
+}
+
+.card-content a:hover {
+color: var(--gold-light);
+letter-spacing: 1px;
+}
+
+
+/* =========================
+PREMIUM FEATURE SECTIONS
+========================= */
+
+.featured-nature,
+.food-feature,
+
+.culture-feature,
+.fact-generator {
+
+position: relative;
+
+background:
+linear-gradient(
+90deg,
+rgba(10, 14, 12, 0.88),
+rgba(10, 14, 12, 0.45),
+rgba(10, 14, 12, 0.82)
+),
+url("images/afghanistan-hero.jpg");
+
+background-size: cover;
+background-position: center;
+
+background-attachment: fixed;
+}
+
+.featured-content,
+.food-feature-content,
+.culture-feature-content,
+.fact-generator-content {
+position: relative;
+z-index: 2;
+}
+
+.featured-content p,
+.food-feature-content p,
+.culture-feature-content p,
+.fact-generator-content p {
+color: var(--gold-light);
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+background:
+linear-gradient(
+135deg,
+#0b0e0c,
+#151a17
+);
+
+border-top:
+1px solid rgba(198, 161, 91, 0.15);
+
+color: #aaa;
+}
+
+footer p {
+letter-spacing: 0.5px;
+}
+
+/* FIX: DARK GREEN HEADER */
+
+header {
+background-color: #173e32 !important;
+background-image: none;
+}
+
+header .logo {
+color: #e3c47a;
+}
+
+header nav a {
+color: #f5f0e5;
+}
+
+header nav a:hover {
+color: #e3c47a;
+}
+
+
+/* FIX: DARK GREEN HEADER */
+
+header {
+background-color: #173e32 !important;
+background-image: none;
+}
+
+header .logo {
+color: #e3c47a;
+}
+
+header nav a {
+color: #f5f0e5;
+}
+
+header nav a:hover {
+color: #e3c47a;
+}
+
+/* Restore Navbar Golden Underline */
+
+header nav a {
+position: relative;
+text-decoration: none;
+}
+
+header nav a::after {
+content: "";
+
+position: absolute;
+width: 0;
+height: 2px;
+left: 0;
+bottom: -6px;
+background: #e3c47a;
+transition: width 0.3s ease;
+}
+
+header nav a:hover::after {
+width: 100%;
+}
+
+header nav a:hover {
+color: #e3c47a;
+}
+
+/* =========================
+EXPLORE SECTION
+========================= */
+
+.explore-section {
+padding: 100px 7%;
+background: #f7f4ec;
+}
+
+.section-heading {
+max-width: 700px;
+margin: 0 auto 50px;
+text-align: center;
+}
+
+.section-subtitle {
+color: #a9853f;
+font-size: 12px;
+font-weight: 700;
+
+letter-spacing: 3px;
+margin-bottom: 15px;
+}
+
+.section-heading h2 {
+color: #173e32;
+font-size: clamp(30px, 4vw, 46px);
+margin-bottom: 18px;
+}
+
+.section-heading > p:last-child {
+color: #666;
+font-size: 16px;
+line-height: 1.8;
+}
+
+.explore-grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 24px;
+width: 100%;
+box-sizing: border-box;
+align-items: stretch;
+
+}
+
+.explore-card {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+min-height: 250px;
+padding: 30px;
+background: #fff;
+border: 1px solid #e8e0d0;
+border-radius: 8px;
+text-decoration: none;
+transition: transform 0.3s ease,
+box-shadow 0.3s ease,
+border-color 0.3s ease;
+}
+
+.card-number {
+color: #b08d57;
+font-size: 14px;
+
+font-weight: 700;
+margin-bottom: 28px;
+}
+
+.explore-card h3 {
+color: #173e32;
+font-size: 21px;
+margin-bottom: 14px;
+}
+
+.explore-card p {
+color: #666;
+font-size: 14px;
+line-height: 1.8;
+margin-bottom: 24px;
+}
+
+.explore-card span {
+color: #9b7738;
+font-size: 13px;
+
+font-weight: 700;
+margin-top: auto;
+}
+
+.explore-card:hover {
+transform: translateY(-6px);
+border-color: #d4b064;
+box-shadow: 0 14px 30px rgba(23, 62, 50, 0.10);
+}
+
+@media (max-width: 900px) {
+.explore-grid {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+}
+
+@media (max-width: 560px) {
+.explore-section {
+padding: 70px 6%;
+}
+
+
+.explore-grid {
+grid-template-columns: 1fr;
+}
+
+.explore-card {
+min-height: 220px;
+}
+}
+/* =========================
+INTRODUCTION SECTION
+========================= */
+
+.introduction {
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+gap: 70px;
+
+padding: 110px 8%;
+background: #ffffff;
+}
+
+.intro-image {
+position: relative;
+}
+
+.intro-image img {
+display: block;
+width: 100%;
+height: 480px;
+object-fit: cover;
+border-radius: 6px;
+}
+
+.intro-image-label {
+position: absolute;
+left: -20px;
+bottom: 25px;
+
+display: flex;
+align-items: center;
+gap: 16px;
+padding: 18px 24px;
+background: #173e32;
+color: #ffffff;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.intro-image-label span {
+color: #e3c47a;
+font-size: 25px;
+font-weight: 700;
+}
+
+.intro-image-label p {
+margin: 0;
+font-size: 13px;
+}
+
+.intro-content {
+max-width: 600px;
+}
+
+.intro-subtitle {
+margin-bottom: 18px;
+color: #a9853f;
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 3px;
+}
+
+.intro-content h2 {
+margin-bottom: 25px;
+color: #173e32;
+font-size: clamp(30px, 3.5vw, 44px);
+line-height: 1.3;
+}
+
+.intro-content h2 span {
+
+display: block;
+color: #a9853f;
+}
+
+.intro-description {
+margin-bottom: 18px;
+color: #626760;
+font-size: 15px;
+line-height: 1.95;
+}
+
+.intro-button {
+display: inline-flex;
+align-items: center;
+gap: 20px;
+margin-top: 15px;
+padding: 14px 22px;
+background: #173e32;
+color: #ffffff;
+text-decoration: none;
+
+font-size: 14px;
+font-weight: 600;
+border: 1px solid #173e32;
+border-radius: 3px;
+transition: all 0.3s ease;
+}
+
+.intro-button:hover {
+background: #e3c47a;
+color: #173e32;
+border-color: #e3c47a;
+}
+
+.intro-button span {
+font-size: 18px;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+.introduction {
+grid-template-columns: 1fr;
+gap: 45px;
+padding: 75px 7%;
+}
+
+.intro-image img {
+height: 380px;
+}
+
+.intro-image-label {
+left: 12px;
+bottom: 15px;
+}
+}
+
+@media (max-width: 480px) {
+.introduction {
+padding: 60px 6%;
+}
+
+
+.intro-image img {
+height: 300px;
+}
+
+.intro-image-label {
+gap: 10px;
+padding: 13px 16px;
+}
+
+.intro-content h2 {
+font-size: 30px;
+}
+}
+/* =========================
+DISCOVER SECTION
+========================= */
+
+.discover-section {
+padding: 100px 7%;
+
+background: #f7f4ec;
+}
+
+.discover-heading {
+max-width: 720px;
+margin: 0 auto 50px;
+text-align: center;
+}
+
+.discover-heading > p {
+color: #a9853f;
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 3px;
+margin-bottom: 15px;
+}
+
+.discover-heading h2 {
+color: #173e32;
+font-size: clamp(30px, 4vw, 46px);
+
+margin-bottom: 18px;
+}
+
+.discover-heading > span {
+color: #666;
+font-size: 15px;
+line-height: 1.8;
+}
+
+.discover-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 24px;
+}
+
+.discover-card {
+padding: 35px;
+min-height: 250px;
+background: #173e32;
+border: 1px solid #173e32;
+
+border-radius: 16px;
+transition: transform 0.3s ease,
+box-shadow 0.3s ease;
+}
+
+.discover-number {
+color: #e3c47a;
+font-size: 14px;
+font-weight: 700;
+margin-bottom: 45px;
+}
+
+.discover-card h3 {
+color: #ffffff;
+font-size: 23px;
+margin-bottom: 15px;
+}
+
+.discover-card p {
+color: #d9dfda;
+
+font-size: 14px;
+line-height: 1.8;
+}
+
+.discover-card:hover {
+transform: translateY(-7px);
+box-shadow: 0 15px 35px rgba(23, 62, 50, 0.18);
+}
+
+@media (max-width: 800px) {
+.discover-grid {
+grid-template-columns: 1fr;
+}
+
+.discover-section {
+padding: 75px 7%;
+}
+}
+
+/* =========================
+FOOTER
+========================= */
+
+.site-footer {
+background: #173e32;
+color: #ffffff;
+padding: 70px 7% 25px;
+}
+
+.footer-content {
+display: grid;
+grid-template-columns: 2fr 1fr;
+gap: 80px;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.footer-brand h2 {
+
+color: #e3c47a;
+font-size: 28px;
+margin-bottom: 18px;
+}
+
+.footer-brand p {
+max-width: 500px;
+color: #d9dfda;
+font-size: 14px;
+line-height: 1.9;
+}
+
+.footer-links {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.footer-links h3 {
+color: #ffffff;
+
+font-size: 17px;
+margin-bottom: 20px;
+}
+
+.footer-links a {
+color: #d9dfda;
+text-decoration: none;
+font-size: 14px;
+margin-bottom: 11px;
+transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+color: #e3c47a;
+}
+
+.footer-bottom {
+max-width: 1200px;
+margin: 55px auto 0;
+padding-top: 22px;
+
+border-top: 1px solid rgba(227, 196, 122, 0.25);
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+}
+
+.footer-bottom p,
+.footer-bottom span {
+margin: 0;
+color: #bfc9c2;
+font-size: 12px;
+}
+
+.footer-bottom span {
+color: #e3c47a;
+}
+
+/* Responsive */
+
+
+@media (max-width: 700px) {
+
+.site-footer {
+padding: 55px 7% 22px;
+}
+
+.footer-content {
+grid-template-columns: 1fr;
+gap: 40px;
+}
+
+.footer-bottom {
+margin-top: 40px;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+}
+}
+
+
+/* =========================
+PROVINCES PAGE HERO
+========================= */
+
+.page-hero {
+min-height: 62vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 80px 7%;
+
+background:
+linear-gradient(
+rgba(8, 28, 22, 0.68),
+rgba(8, 28, 22, 0.78)
+),
+url("images/afghanistan-hero.jpg");
+
+background-size: cover;
+
+background-position: center;
+background-repeat: no-repeat;
+
+color: #ffffff;
+}
+
+.page-hero-content {
+max-width: 800px;
+}
+
+.page-hero-content > p {
+color: #e3c47a;
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 4px;
+margin-bottom: 20px;
+}
+
+.page-hero-content h1 {
+color: #ffffff;
+
+font-size: clamp(40px, 6vw, 70px);
+line-height: 1.2;
+margin-bottom: 22px;
+}
+
+.page-hero-content span {
+display: block;
+color: #e7e4dc;
+font-size: 16px;
+line-height: 1.9;
+max-width: 650px;
+margin: 0 auto;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+.page-hero {
+
+min-height: 55vh;
+padding: 65px 6%;
+}
+
+.page-hero-content > p {
+font-size: 10px;
+letter-spacing: 3px;
+}
+
+.page-hero-content h1 {
+font-size: 40px;
+}
+
+.page-hero-content span {
+font-size: 14px;
+}
+}
+
+
+/* =========================
+PROVINCES SECTION
+========================= */
+
+.provinces-section {
+padding: 100px 7%;
+background: #f7f4ec;
+}
+
+.section-title {
+max-width: 750px;
+margin: 0 auto 55px;
+text-align: center;
+}
+
+.section-title > p {
+color: #a9853f;
+font-size: 12px;
+font-weight: 700;
+
+letter-spacing: 3px;
+margin-bottom: 15px;
+}
+
+.section-title h2 {
+color: #173e32;
+font-size: clamp(30px, 4vw, 46px);
+line-height: 1.3;
+margin-bottom: 18px;
+}
+
+.section-title span {
+display: block;
+color: #666;
+font-size: 15px;
+line-height: 1.8;
+}
+
+
+/* Province Grid */
+
+
+.province-grid {
+max-width: 1200px;
+margin: 0 auto;
+
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 30px;
+}
+
+
+/* Province Card */
+
+.province-card {
+overflow: hidden;
+background: #ffffff;
+border: 1px solid #e7dfd0;
+border-radius: 7px;
+
+transition:
+
+transform 0.35s ease,
+box-shadow 0.35s ease,
+border-color 0.35s ease;
+}
+
+.province-card img {
+display: block;
+width: 100%;
+height: 300px;
+object-fit: cover;
+
+transition: transform 0.5s ease;
+}
+
+.card-content {
+padding: 28px 30px 30px;
+}
+
+.card-content h3 {
+color: #173e32;
+
+font-size: 25px;
+margin-bottom: 12px;
+}
+
+.card-content p {
+color: #666;
+font-size: 14px;
+line-height: 1.8;
+margin-bottom: 20px;
+}
+
+.card-content a {
+display: inline-block;
+color: #9b7738;
+font-size: 13px;
+font-weight: 700;
+text-decoration: none;
+
+transition: color 0.3s ease;
+}
+
+
+.card-content a:hover {
+color: #173e32;
+}
+
+
+/* Hover Effect */
+
+.province-card:hover {
+transform: translateY(-7px);
+border-color: #d4b064;
+box-shadow: 0 16px 35px rgba(23, 62, 50, 0.12);
+}
+
+.province-card:hover img {
+transform: scale(1.04);
+}
+
+
+/* Responsive */
+
+
+@media (max-width: 700px) {
+
+.provinces-section {
+padding: 70px 6%;
+}
+
+.province-grid {
+grid-template-columns: 1fr;
+gap: 24px;
+}
+
+.province-card img {
+height: 250px;
+}
+
+.card-content {
+padding: 23px;
+}
+}
+
+
+/* FINAL PROVINCE GRID FIX */
+
+.provinces-section .province-grid {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 30px;
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.provinces-section .province-card {
+width: 100%;
+min-width: 0;
+box-sizing: border-box;
+}
+
+.provinces-section .province-card img {
+display: block;
+width: 100%;
+
+height: 300px;
+object-fit: cover;
+}
+
+@media (max-width: 700px) {
+.provinces-section .province-grid {
+grid-template-columns: 1fr;
+gap: 24px;
+}
+
+.provinces-section .province-card img {
+height: 250px;
+}
+}
+
+/* Province Grid - Final Responsive Fix */
+
+@media (min-width: 701px) and (max-width: 850px) {
+
+.provinces-section .province-grid {
+grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+gap: 24px;
+}
+
+}
+
+@media (max-width: 700px) {
+
+.provinces-section .province-grid {
+grid-template-columns: 1fr !important;
+gap: 24px;
+}
+
+}
+
+
+/* HISTORY LUXURY OVERRIDE */
+
+.history-section {
+background: #12372d !important;
+padding: 80px 7% !important;
+}
+
+.history-grid {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 24px;
+}
+
+.history-card {
+padding: 35px !important;
+min-height: 220px;
+background: linear-gradient(145deg, #1b493b, #102f27) !important;
+border: 1px solid rgba(227, 196, 122, 0.4) !important;
+
+border-radius: 4px !important;
+transition: 0.3s ease;
+}
+
+.history-card:hover {
+transform: translateY(-6px);
+border-color: #e3c47a !important;
+box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.history-number {
+color: #e3c47a !important;
+font-family: Georgia, serif;
+font-size: 32px !important;
+}
+
+.history-card h3 {
+color: #fff8e9 !important;
+font-family: Georgia, serif;
+font-size: 23px !important;
+
+}
+
+.history-card p {
+color: #d0dcd4 !important;
+line-height: 1.9;
+}
+
+.history-places {
+background: #f8f5ed !important;
+padding: 85px 7% !important;
+}
+
+.history-place-grid {
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 24px;
+}
+
+.history-place-card {
+background: #fff !important;
+border: 1px solid #e9dfca;
+
+border-radius: 4px;
+overflow: hidden;
+transition: 0.3s ease;
+}
+
+.history-place-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 16px 35px rgba(18, 55, 45, 0.14);
+}
+
+.history-place-card img {
+width: 100%;
+height: 240px;
+object-fit: cover;
+}
+
+.history-place-card h3 {
+color: #173e32 !important;
+font-family: Georgia, serif;
+}
+
+
+.history-place-card p {
+color: #666 !important;
+}
+
+@media (max-width: 700px) {
+.history-grid,
+.history-place-grid {
+grid-template-columns: 1fr !important;
+}
+}
+
+
+/* HISTORY LUXURY OVERRIDE */
+
+.history-section {
+background: #12372d !important;
+padding: 80px 7% !important;
+}
+
+.history-grid {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 24px;
+}
+
+.history-card {
+padding: 35px !important;
+min-height: 220px;
+background: linear-gradient(145deg, #1b493b, #102f27) !important;
+border: 1px solid rgba(227, 196, 122, 0.4) !important;
+
+border-radius: 4px !important;
+transition: 0.3s ease;
+}
+
+.history-card:hover {
+transform: translateY(-6px);
+border-color: #e3c47a !important;
+box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.history-number {
+color: #e3c47a !important;
+font-family: Georgia, serif;
+font-size: 32px !important;
+}
+
+.history-card h3 {
+color: #fff8e9 !important;
+font-family: Georgia, serif;
+font-size: 23px !important;
+
+}
+
+.history-card p {
+color: #d0dcd4 !important;
+line-height: 1.9;
+}
+
+.history-places {
+background: #f8f5ed !important;
+padding: 85px 7% !important;
+}
+
+.history-place-grid {
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 24px;
+}
+
+.history-place-card {
+background: #fff !important;
+border: 1px solid #e9dfca;
+
+border-radius: 4px;
+overflow: hidden;
+transition: 0.3s ease;
+}
+
+.history-place-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 16px 35px rgba(18, 55, 45, 0.14);
+}
+
+.history-place-card img {
+width: 100%;
+height: 240px;
+object-fit: cover;
+}
+
+.history-place-card h3 {
+color: #173e32 !important;
+font-family: Georgia, serif;
+}
+
+
+.history-place-card p {
+color: #666 !important;
+}
+
+@media (max-width: 700px) {
+.history-grid,
+.history-place-grid {
+grid-template-columns: 1fr !important;
+}
+}
+
+
+
+/* HISTORY FOOTER */
+
+footer {
+background: #12372d !important;
+color: #fff8e9 !important;
+border-top: 1px solid #b08d57;
+
+}
+
+footer a {
+color: #e3c47a !important;
+}
+
+footer a:hover {
+color: #ffffff !important;
+}
+
